@@ -1,0 +1,99 @@
+html {
+    background-image: url("img/diamond_pattern.gif");
+    background-color: #ecebe5;
+    font-family: "proxima-nova-soft", "proxima-nova-soft-n4", sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    color: #383838;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'proxima-nova', arial, verdana, sans-serif;
+    color: #353430;
+}
+h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin: 1em 0 0.5em;
+}
+h2 .bullet {
+    font-family: Georgia;
+    font-size: 25px;
+    color: #666;
+    position: absolute;
+    top: 5px;
+    left: -30px;    
+    display: none;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    /*padding: 10px 0;*/
+   /* margin: 1em 0 0.5em;*/
+    /*font-family:"proxima-nova-soft", "proxima-nova-soft-n4", sans-serif;*/
+    margin:0;
+    padding:0;
+    margin-top:30px;
+    margin-bottom:15px;
+    color: #383838;
+
+}
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #383838;
+
+}
+h5 {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: #383838;
+
+}
+
+hgroup h3 {
+    margin:-5px 0 0 0;   
+}
+
+body, button, input, select, textarea {
+    font-family: "proxima-nova-soft", "proxima-nova-soft-n4", sans-serif;
+}
+
+p, li {
+    font-family: "proxima-nova-soft", "proxima-nova-soft-n4", sans-serif;
+    font-size: 14px;
+    color: #383838;
+    line-height: 1.45em;
+}
+
+a {
+    text-decoration: none;
+    color: #98002E;
+}
+a:link, p.source a:link,
+a:visited, p.source a:visited {
+    color: #a82439;
+    border-bottom: none;
+}
+a:hover, p.source a:hover {
+    color: #c52b43;
+    border-bottom: none;
+}
