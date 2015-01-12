@@ -2,11 +2,18 @@
 // @import "helpers/_sprites";
 
 // Authored Dependancies
-// @import "helpers/_mixins";
-// @import "helpers/_colors";
+@import "helpers/_variables";
+@import "helpers/_mixins";
+
+// Helper Classes
+// @import "helpers/_access";
+@import "helpers/_common";
+@import "helpers/_icomoon";
+@import "helpers/_flexslider";
+@import "helpers/_tipsy";
 
 // Global
-// @import "helpers/_normalize";
+@import "helpers/_normalize";
 // @import "helpers/_defaults";
 
 // Patterns
@@ -16,15 +23,15 @@
 
 
 // Modules
-
-
-// Helper Classes
-// @import "helpers/_access";
-@import "helpers/_common";
-@import "helpers/_icomoon";
-@import "helpers/_normalize";
-@import "helpers/_flexslider";
-@import "helpers/_tipsy";
+@import "modules/_collapsed-nav";
+@import "modules/_info-for";
+@import "modules/_resources";
+@import "modules/_overlay";
+@import "modules/_news-events";
+@import "modules/_cu-feedback";
+@import "modules/_main-nav";
+@import "modules/_sub-nav";
+@import "modules/_social-icons";
 
 // Print
 @import "print/_default";

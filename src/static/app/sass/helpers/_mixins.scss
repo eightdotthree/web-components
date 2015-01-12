@@ -1,4 +1,20 @@
-@mixin bp($point) {
+@mixin bp($point, $val: 0) {
+
+	// @if $point == s { // Small
+	// 	@media (max-width: 767px) { @content; }
+	// }
+
+	@if $point == m { // Medium
+		@media (min-width: 780px) { @content; }
+	}
+
+	// @if $point == l { // Large
+	// 	@media (min-width: 1200px) { @content; }
+	// }
+
+	@if $point == wildcard { // Uses variable breakpoint
+		@media (min-width: #{$val}px) { @content; }
+	}
 
 	@if $point == print {
 		@media only print { @content; }
@@ -27,6 +43,14 @@
 		box-shadow: inset $hoffset $voffset $blur $spread $color;
 	}
 
+}
+
+@mixin vendorize($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
 }
 
 @mixin opacity($i) {

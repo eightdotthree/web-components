@@ -1,0 +1,51 @@
+.resources {
+  // display: none;
+	&.active {
+		display: block;
+	}
+	a {
+	  display: block;
+	  padding: 10px 0 10px 10px;
+	  border-bottom: 1px solid #000;
+	}
+	li > a {
+	  color: #686666;
+	}
+	li a .bullet {
+	  color: #C70909;
+	  position: absolute;
+	  right: 10px;
+	}
+}
+
+.resourcesLinks {
+  clear: both;
+  li .separator {
+    display: none;
+  }
+}
+
+.resources-nav {
+  list-style-type: none;
+  > li > a {
+    display: none;
+  }
+}
+
+.resources-subNav-login.active {
+  display: block;
+}
+
+.resources-subNav-search {
+  &.active {
+    display: block;
+  }
+  img {
+    display: none;
+  }
+}
+
+.resources-subNav {
+  display: none;
+  z-index: 2000;
+}

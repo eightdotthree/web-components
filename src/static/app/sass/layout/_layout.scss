@@ -1,0 +1,36 @@
+/* new to add (or prevent) underscore on links in main content areas*/
+
+.main a {
+  &:link, &:visited {
+    border-bottom: 1px dotted #C0C0C0;
+  }
+}
+
+.rightColumn a {
+  &:link, &:visited {
+    border-bottom: 1px dotted #C0C0C0;
+  }
+}
+
+.leftNavSubContent a {
+  &:link, &:visited {
+    border-bottom: 1px dotted #C0C0C0;
+  }
+}
+
+.funnelBlock a {
+  &:link, &:visited {
+    border-bottom: none;
+  }
+}
+
+.newsEvents a {
+  &:link, &:visited {
+    border-bottom: none;
+  }
+}
+
+#container {
+  min-width: 320px;
+  overflow: hidden;
+}
