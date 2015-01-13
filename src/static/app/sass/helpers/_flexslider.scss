@@ -36,13 +36,29 @@
       width: 100%;
       display: block;
     }
+    .bg3 img {
+      @include bp(xl) {
+        max-width: 200% !important;
+      }
+    }
+  }
+  @include bp(xl) {
+    overflow: visible !important;
   }
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 
-.flex-pauseplay span {
-  text-transform: capitalize;
+.flex-pauseplay {
+  color: White;
+  background-color: Blue;
+  position: fixed;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  span {
+    text-transform: capitalize;
+  }
 }
 
 /* Clearfix for the .slides element */
@@ -92,11 +108,118 @@ html[xmlns] .slides {
   }
 }
 
+.slide {
+  // border-bottom: 5px solid #E9E1C2;
+  position: relative;
+  // min-height:340px
+  .more {
+    margin-left: 10px;
+  }
+  @include bp(m) {
+    position: relative;
+    // height: 500px;
+    border: none;
+  }
+  @include bp(xl) {
+    position: relative;
+    height: 590px;
+  }
+}
+
+.slideDescription {
+  .active & {
+    @include bp(m) {
+      visibility: visible;
+    }
+  }
+  .centeredContent {
+    a {
+      &:after {
+        @include bp(m) {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 100%;
+          width: 0;
+          height: 0;
+          border: 17px solid transparent;
+          border-left: 10px solid #a82439;
+        }
+      }
+      @include bp(m) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        background-color: #a82439;
+        color: white;
+        line-height: 2.8;
+        padding: 0 10px 0 10px;
+        text-indent: 0;
+      }
+    }
+    @include bp(m) {
+      position: relative;
+      background-color: white;
+      font-size: 14px;
+      font-family: "proxima-nova-soft", "proxima-nova-soft-n4", sans-serif;
+      padding: 8px 0 7px 0;
+      text-align: center;
+      -webkit-box-shadow: 0px 0px 7px 0px #434343;
+      box-shadow: 0px 0px 7px 0px #434343;
+    }
+  }
+  @include bp(m) {
+    // display: none;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    bottom: 65px;
+    padding: 0 0 0 10%;
+    white-space: nowrap;
+    width: 80%;
+  }
+}
+
+.slides {
+  @include bp(m) {
+    border-bottom: none;
+  }
+}
+
+.slideLinks {
+  list-style-type: none;
+  li a {
+    // color: #CB003D;
+    &:hover {
+      color: #a82439 !important;
+    }
+    .bullet {
+      margin: 0 0 0 3px;
+      @include bp(m) {
+        margin: 0 0 0 3px;
+      }
+    }
+  }
+  @include bp(m) {
+    list-style-type: none;
+  }
+}
+
 /* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
 
 .flex-container {
   zoom: 1;
   position: relative;
+  @include bp(m) {
+    overflow: hidden;
+  }
+  @include bp(xl) {
+    overflow: visible !important;
+  }
 }
 
 /* Caption style */
@@ -132,6 +255,20 @@ html[xmlns] .slides {
   cursor: pointer;
   text-indent: -9999px;
   z-index: 9999999999999999999;
+  /*top:85%;  */
+  outline: none;
+  opacity: 0.4;
+  filter: alpha(opacity = 40);
+  &:hover {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+  }
+  .homepage-feature & {
+    z-index: 10;
+  }
+  .ie7 & {
+    top: 80%;
+  }
   &.next {
     background-position: -43px 0;
     right: 0;
@@ -147,6 +284,12 @@ html[xmlns] .slides {
   &.flex-disabled {
     /*opacity: .3; filter:alpha(opacity=30); cursor: default;*/
     display: none;
+  }
+  @include bp(m) {
+    top: 45% !important;
+  }
+  @include bp(xl) {
+     top: 38% !important;
   }
 }
 

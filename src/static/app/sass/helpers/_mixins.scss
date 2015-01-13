@@ -1,19 +1,23 @@
 @mixin bp($point, $val: 0) {
 
-	// @if $point == s { // Small
-	// 	@media (max-width: 767px) { @content; }
-	// }
-
 	@if $point == m { // Medium
 		@media (min-width: 780px) { @content; }
 	}
 
-	// @if $point == l { // Large
-	// 	@media (min-width: 1200px) { @content; }
-	// }
+	@if $point == l { // Large
+		@media (min-width: 1024px) { @content; }
+	}
+
+	@if $point == xl { // Large
+		@media (min-width: 1200px) { @content; }
+	}
 
 	@if $point == wildcard { // Uses variable breakpoint
 		@media (min-width: #{$val}px) { @content; }
+	}
+
+	@if $point == highres {
+		@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) { @content; }
 	}
 
 	@if $point == print {

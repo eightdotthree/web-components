@@ -1,5 +1,11 @@
 /* new to add (or prevent) underscore on links in main content areas*/
 
+#main {
+  @include bp(m) {
+    overflow: hidden;
+  }
+}
+
 .main a {
   &:link, &:visited {
     border-bottom: 1px dotted #C0C0C0;

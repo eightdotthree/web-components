@@ -43,7 +43,7 @@
       text-align: right;
       margin-left: 1px;
     }
-    @include bp(wildcard, 1024px) {
+    @include bp(l) {
       position: absolute;
       top: 69px;
       right: 92px;
@@ -51,7 +51,7 @@
   }
   #b-blog .second-col li:first-child {
     border-top: 1px dotted #7f5900;
-    @include bp(wildcard, 1024px) {
+    @include bp(l) {
       border-top: none;
     }
   }
@@ -111,6 +111,30 @@
         right: 10px;
         &.confirm {
           top: 3px;
+        }
+      }
+      span {
+        &.close {
+          @include bp(highres) {
+            top: 10px;
+            right: 7px;
+            background: url('/_files/img/welcome/welcome_close2x.png');
+            -webkit-background-size: 13px 13px;
+            background-size: 13px 13px;
+            height: 13px;
+            width: 13px;
+          }
+        }
+        &.confirm {
+          @include bp(highres) {
+            top: 3px;
+            right: 5px;
+            background: url('/_files/img/welcome/welcome_unsave2x.png');
+            -webkit-background-size: 69px 25px;
+            background-size: 69px 25px;
+            height: 25px;
+            width: 69px;
+          }
         }
       }
     }

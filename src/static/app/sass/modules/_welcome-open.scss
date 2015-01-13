@@ -18,7 +18,7 @@
     .close, .dont-show {
       display: block;
     }
-    @include bp(wildcard, 1024px) {
+    @include bp(l) {
     	position: absolute;
       top: 5px;
       right: 5px;
@@ -50,7 +50,7 @@
       -webkit-box-shadow: -3px 3px 5px -2px black;
       box-shadow: -3px 3px 5px -2px black;
   	}
-  	@include bp(wildcard, 1024px) {
+  	@include bp(l) {
   		top: 183px;
       width: 980px;
       margin-left: -499px;
@@ -66,13 +66,13 @@
   	.first-col {
 	    .odd {
 	      background-color: #f7f6ef;
-	      @include bp(wildcard, 1024px) {
+	      @include bp(l) {
 	      	background-color: #f7f6ef;
 	      }
 	    }
 	    .even {
 	      background: #fff;
-	      @include bp(wildcard, 1024px) {
+	      @include bp(l) {
 	      	background: #fff;
 	      }
 	    }
@@ -80,13 +80,13 @@
 	  .second-col {
 	    .odd {
 	      background: #fff;
-	      @include bp(wildcard, 1024px) {
+	      @include bp(l) {
 	      	background-color: #f7f6ef;
 	      }
 	    }
 	    .even {
 	      background-color: #f7f6ef;
-	      @include bp(wildcard, 1024px) {
+	      @include bp(l) {
 	      	background: #fff;
 	      }
 	    }
@@ -123,20 +123,20 @@
 			      }
 			    }
 			  }
-			  @include bp(wildcard, 1024px) {
+			  @include bp(l) {
 			  	float: left;
 	        width: 50%;
 	        margin: 0;
 	        padding: 0;
 			  }
 	  	}
-		  @include bp(wildcard, 1024px) {
+		  @include bp(l) {
 		  	overflow: auto;
 		  }
 	  }
   }
   #t-blog {
-  	@include bp(wildcard, 1024px) {
+  	@include bp(l) {
   		background: none;
       color: #81bd69;
       text-align: center;
@@ -148,12 +148,12 @@
   }
   .desk-blog {
   	.links {
-			@include bp(wildcard, 1024px) {
+			@include bp(l) {
 				width: 100%;
 			}
 	  }
 	  .message {
-	  	@include bp(wildcard, 1024px) {
+	  	@include bp(l) {
 	  		display: none;
 	  	}
 	  }

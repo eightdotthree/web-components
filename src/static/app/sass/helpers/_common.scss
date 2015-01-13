@@ -17,8 +17,19 @@ button, input, select, textarea {
   color: #383838;
 }
 
-section li {
-  max-width: 70%;
+section {
+	li {
+	  max-width: 70%;
+	  @include bp(m) {
+			max-width: 100%;
+		}
+	}
+	p {
+		@include bp(m) {
+			// font-family: Arial;
+      color: #383838;
+		}
+	}
 }
 
 ::-moz-selection, ::selection {
@@ -100,6 +111,9 @@ h2 {
     top: 5px;
     left: -30px;
     display: none;
+    @include bp(xl) {
+    	display: none;
+    }
   }
 }
 
@@ -153,6 +167,10 @@ a {
     color: #a82439;
     border-bottom: none;
   }
+}
+
+blockquote {
+	display: none;
 }
 
 p.source a:link, a:visited, p.source a:visited {
@@ -214,6 +232,106 @@ a:hover, p.source a:hover {
   text-indent: -999em;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
+  @include bp(m) {
+  	clear: left;
+    float: left;
+    display: block;
+    position: static;
+    height: 58px;
+    width: 260px;
+    margin: -6px 0 0 10px;
+    text-indent: -999em;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.description {
+	&:hover {
+		@include bp(m) {
+			// color: #a82439;
+		}
+	}
+	@include bp(m) {
+		font-size: 13px;
+    color: #383838;
+	}
+}
+
+.closeButton {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  left: 192px;
+  bottom: 268px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 900;
+  background-color: #000;
+  cursor: pointer;
+  @include bp(m) {
+  	left: 294px;
+    bottom: 418px;
+  }
+}
+
+.maxWidth {
+  @include bp(m) {
+  	max-width: 1128px;
+	  margin: 0 auto 0 auto;
+  }
+}
+
+.toggle:after {
+  background-image: url(img/miscButtons.png);
+  background-position: -23px 0;
+}
+
+.btn-removeShortcut {
+  background-image: url(img/resources.png);
+  background-position: -48px -14px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  display: block;
+  &:hover {
+    background-position: -48px 0;
+  }
+}
+
+.btn-addThisPage {
+  font-size: 13px;
+  font-weight: 800;
+  color: #a9233a;
+  line-height: -20px;
+  &:before {
+    background-image: url(img/resources.png);
+    background-position: -63px 0px;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    content: "";
+  }
+  &.is-favorite:before {
+    background-position: -63px -16px;
+  }
+}
+
+.search {
+  display: none;
+}
+
+#exploreVideo {
+  display: none;
+}
+
+div.rss-story p {
+  margin-top: -10px;
 }
 
 .ir {
