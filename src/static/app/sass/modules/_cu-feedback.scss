@@ -4,6 +4,13 @@
   left: 20px;
   border-bottom: 1px solid #000;
   z-index: 10000;
+  @include bp(m) {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    top: 0;
+    right: 10px;
+  }
 }
 
 #cu_feedback_bg, #cu_feedback_tooltip_bg {
@@ -32,6 +39,11 @@
   a:hover {
 	  text-decoration: none !important;
 	}
+  .m-remove {
+    @include bp(m) {
+      display: none;
+    }
+  }
   .text {
     position: relative;
     z-index: 500;
@@ -48,6 +60,18 @@
     background: url(/_files/img/feedback_icon.png) 0 0 no-repeat;
     width: 17px;
     height: 13px;
+    @include bp(m) {
+      left: 9px;
+    }
+  }
+  @include bp(m) {
+    position: relative;
+    width: 35px;
+    bottom: none;
+    left: none;
+    top: 10px;
+    right: 0;
+    padding: 0;
   }
 }
 
@@ -93,6 +117,9 @@
 	    text-decoration: underline;
 	  }
 	}
+  @include bp(m) {
+    display: none !important;
+  }
 }
 
 #cu_feedback_tooltip_tail {
