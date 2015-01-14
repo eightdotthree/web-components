@@ -1,0 +1,10 @@
+* {
+  word-wrap: break-word;
+  .ie7 & {
+  	zoom: 1;
+  }
+}
+
+html {
+	background-repeat: repeat-x;
+}

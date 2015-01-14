@@ -1,93 +1,71 @@
-// Sprites
-// @import "helpers/_sprites";
-
-// Authored Dependancies
-@import "helpers/_variables";
-@import "helpers/_mixins";
-
-// Helper Classes
-// @import "helpers/_access";
-@import "helpers/_common";
-@import "helpers/_icomoon";
-@import "helpers/_flexslider";
-@import "helpers/_tipsy";
-
-// Global
-@import "helpers/_normalize";
-// @import "helpers/_defaults";
-
-// Patterns
+// Helpers
+@import "helpers/main/_variables";
+@import "helpers/main/_mixins";
+@import "helpers/main/_common";
+@import "helpers/main/_icomoon";
+@import "helpers/main/_flexslider";
+@import "helpers/main/_tipsy";
+@import "helpers/main/_normalize";
+@import "helpers/main/_defaults";
 
 
 // Layout
-@import "layout/_layout";
-@import "layout/_header";
-@import "layout/_footer";
+@import "layout/main/_layout";
+@import "layout/main/_header";
+@import "layout/main/_footer";
+
 
 // Modules
-@import "modules/_bg1";
-@import "modules/_bg2";
-@import "modules/_bg3";
-
-@import "modules/_circle-icon";
-
-@import "modules/_collapsed-nav";
-@import "modules/_collapsed-search";
-
-@import "modules/_cu-feedback";
-@import "modules/_cu-nav-bar-masks";
-@import "modules/_cu-search-helper";
-
-@import "modules/_footer-info";
-@import "modules/_footer-links";
-@import "modules/_footer-ribbon";
-
-@import "modules/_main-nav";
-@import "modules/_main-nav-links";
-
-@import "modules/_news-events";
-@import "modules/_news-events-nav";
-@import "modules/_news-events-content";
-
-@import "modules/_resources-nav";
-@import "modules/_resources-sub-nav";
-@import "modules/_resources-sub-nav-login";
-@import "modules/_resources-sub-nav-search";
-@import "modules/_resources-sub-nav-shortcuts";
-
-@import "modules/_rotator-container";
-
-@import "modules/_scattered-blurb";
-@import "modules/_scattered-photos";
-
-@import "modules/_sub-rotator";
-
-@import "modules/_welcome";
-@import "modules/_welcome-open";
-@import "modules/_welcome-tabs";
-
-@import "modules/_info-for";
-@import "modules/_resources";
-@import "modules/_overlay";
-@import "modules/_sub-nav";
-@import "modules/_social-icons";
-@import "modules/_secondary-nav";
-@import "modules/_meta-links";
-
-@import "modules/_bottom-paging";
-@import "modules/_homepage-feature";
-@import "modules/_media";
-@import "modules/_video-link";
-@import "modules/_whats-happening";
-@import "modules/_weather";
+@import "modules/main/_bg1";
+@import "modules/main/_bg2";
+@import "modules/main/_bg3";
+@import "modules/main/_bottom-paging";
+@import "modules/main/_circle-icon";
+@import "modules/main/_collapsed-nav";
+@import "modules/main/_collapsed-search";
+@import "modules/main/_cu-feedback";
+@import "modules/main/_cu-nav-bar-masks";
+@import "modules/main/_cu-search-helper";
+@import "modules/main/_footer-info";
+@import "modules/main/_footer-links";
+@import "modules/main/_footer-ribbon";
+@import "modules/main/_homepage-feature";
+@import "modules/main/_info-for";
+@import "modules/main/_main-nav";
+@import "modules/main/_main-nav-links";
+@import "modules/main/_media";
+@import "modules/main/_meta-links";
+@import "modules/main/_news-events";
+@import "modules/main/_news-events-nav";
+@import "modules/main/_news-events-content";
+@import "modules/main/_overlay";
+@import "modules/main/_resources";
+@import "modules/main/_resources-nav";
+@import "modules/main/_resources-sub-nav";
+@import "modules/main/_resources-sub-nav-login";
+@import "modules/main/_resources-sub-nav-search";
+@import "modules/main/_resources-sub-nav-shortcuts";
+@import "modules/main/_rotator-container";
+@import "modules/main/_scattered-blurb";
+@import "modules/main/_scattered-photos";
+@import "modules/main/_secondary-nav";
+@import "modules/main/_social-icons";
+@import "modules/main/_sub-nav";
+@import "modules/main/_sub-rotator";
+@import "modules/main/_video-link";
+@import "modules/main/_weather";
+@import "modules/main/_welcome";
+@import "modules/main/_welcome-open";
+@import "modules/main/_welcome-tabs";
+@import "modules/main/_whats-happening";
 
 // Theme Modules
-@import "modules/_values";
-@import "modules/_realize";
-@import "modules/_exploration";
-@import "modules/_global";
-@import "modules/_creativity";
+@import "modules/main/_values";
+@import "modules/main/_realize";
+@import "modules/main/_exploration";
+@import "modules/main/_global";
+@import "modules/main/_creativity";
 
 
 // Print
-@import "print/_default";
+@import "print/main/_default";

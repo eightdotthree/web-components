@@ -1,0 +1,94 @@
+.btn-flat {
+  padding: 5px 10px 5px 10px;
+  &:after {
+    font-size: 16px;
+    content: "»";
+    margin-left: 20px;
+  }
+  &.white {
+    background-color: #fff;
+  }
+}
+
+.teal {
+  background-color: $teal;
+  &:hover {
+    background-color: $teal-hover;
+  }
+}
+
+.teal2 {
+  background-color: $teal2;
+  &:hover {
+    background-color: $teal2-hover;
+  }
+}
+
+.red {
+  background-color: $red;
+  &:hover {
+    background-color: $red-hover;
+  }
+}
+
+.grey {
+  background-color: $grey;
+  &:hover {
+    background-color: $grey-hover;
+  }
+}
+
+.grey2 {
+  background-color: $grey2;
+  &:hover {
+    background-color: $grey2-hover;
+  }
+}
+
+.leftSlideFade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: -100%;
+  z-index: 110;
+  background-image: url("../level/img/slide_fade_left.png");
+  background-repeat: repeat-y;
+  background-position: right top;
+}
+
+.rightSlideFade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  right: -100%;
+  z-index: 110;
+  background-image: url("../level/img/slide_fade_right.png");
+  background-repeat: repeat-y;
+  background-position: left top;
+}
+
+.blockOut {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // background-color: $white;
+}
+
+a.cta {
+  padding: 7px 10px 7px 10px;
+  background-color: #99002E;
+  color: White;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 800;
+  max-width: 100%;
+  &.hover {
+    color: White;
+    text-decoration: none;
+  }
+}
