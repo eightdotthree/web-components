@@ -1,6 +1,6 @@
 // Helpers
-@import "helpers/level/_variables";
-@import "helpers/level/_mixins";
+@import "helpers/_variables"; // Common helper
+@import "helpers/_mixins"; // Common helper
 @import "helpers/level/_common";
 @import "helpers/level/_normalize";
 @import "helpers/level/_defaults";

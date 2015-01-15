@@ -1,6 +1,6 @@
 // Helpers
-@import "helpers/main/_variables";
-@import "helpers/main/_mixins";
+@import "helpers/_variables"; // Common helper
+@import "helpers/_mixins"; // Common helper
 @import "helpers/main/_common";
 @import "helpers/main/_icomoon";
 @import "helpers/main/_flexslider";
