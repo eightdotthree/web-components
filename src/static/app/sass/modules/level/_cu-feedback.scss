@@ -1,0 +1,37 @@
+#cu_feedback_button {
+  @include bp(m) {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    top: 0;
+    right: 10px;
+  }
+}
+
+#cu_feedback_ribbon {
+  div.icon {
+    @include bp(m) {
+      left: 9px;
+    }
+  }
+  .m-remove {
+    @include bp(m) {
+      display: none;
+    }
+  }
+  @include bp(m) {
+    position: relative;
+    width: 35px;
+    bottom: none;
+    left: none;
+    top: 10px;
+    right: 0;
+    padding: 0;
+  }
+}
+
+#cu_feedback_tooltip {
+  @include bp(m) {
+    display: none !important;
+  }
+}

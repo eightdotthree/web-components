@@ -45,6 +45,12 @@
   }
 }
 
+.leftSlideFade, .rightSlideFade {
+	.ie7 & {
+		display: none;
+	}
+}
+
 .leftSlideFade {
   position: absolute;
   top: 0;
@@ -69,15 +75,6 @@
   background-position: left top;
 }
 
-.blockOut {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  // background-color: $white;
-}
-
 a.cta {
   padding: 7px 10px 7px 10px;
   background-color: #99002E;
@@ -91,4 +88,65 @@ a.cta {
     color: White;
     text-decoration: none;
   }
+}
+
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  br {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix {
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  zoom: 1;
+}
+
+.ellipsis.multiline {
+  white-space: normal;
 }

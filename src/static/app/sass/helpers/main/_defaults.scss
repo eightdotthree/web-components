@@ -138,18 +138,18 @@ h5 {
 }
 
 section {
-    li {
-      max-width: 70%;
+  li {
+    max-width: 70%;
+    @include bp(m) {
+          max-width: 100%;
+      }
+  }
+  p {
       @include bp(m) {
-            max-width: 100%;
-        }
-    }
-    p {
-        @include bp(m) {
-            // font-family: Arial;
-      color: #383838;
-        }
-    }
+          // font-family: Arial;
+    color: #383838;
+      }
+  }
 }
 
 hgroup h3 {
