@@ -3,6 +3,11 @@
   max-width: 960px;
   min-height: 310px;
   padding: 0 0 20px 0;
+  a {
+    &:link, &:visited {
+      border-bottom: none;
+    }
+  }
 }
 
 .news, .events {
