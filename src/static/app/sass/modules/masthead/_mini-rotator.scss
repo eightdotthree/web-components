@@ -33,7 +33,7 @@
       position: relative;
       background: #a82439;
     }
-    @include bp(wildcard, 768px) {
+    @include bp(wildcard-min, 768px) {
     	// max-width: 266px;
     }
   }
@@ -166,13 +166,13 @@
   overflow: hidden;
   position: relative;
   z-index: 100;
-  @include bp(wildcard, 600px) {
+  @include bp(wildcard-min, 600px) {
   	width: 533px;
   }
-  @include bp(wildcard, 880px) {
+  @include bp(wildcard-min, 880px) {
   	width: 840px;
   }
-  @include bp(wildcard, 1160px) {
+  @include bp(wildcard-min, 1160px) {
   	width: 100%;
   }
 }

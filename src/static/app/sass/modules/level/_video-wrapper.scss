@@ -10,10 +10,10 @@
     width: 100%;
     height: 100%;
   }
-  @include bp(wildcard, 481px) {
+  @include bp(wildcard-max, 481px) {
     padding-bottom: 56.25%;
   }
-  @include bp(m) {
+  @include bp(wildcard-max, 780px) {
     padding-bottom: 40%;
   }
 }

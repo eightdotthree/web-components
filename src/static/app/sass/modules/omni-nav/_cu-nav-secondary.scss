@@ -1,0 +1,48 @@
+.cu_nav_secondary {
+	&.expanded {
+		li {
+			&.selected a {
+				@include bp(wildcard-max, 700px) {
+					width: 175px;
+          color: #404040;
+				}
+			}
+			a {
+				@include bp(wildcard-max, 700px) {
+					width: 100% !important;
+				}
+			}
+			@include bp(wildcard-max, 700px) {
+				width: 100% !important;
+			}
+		}
+		@include bp(wildcard-max, 700px) {
+			overflow: visible;
+      max-width: 999px;
+      width: 100% !important;
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      z-index: 99500 !important;
+		}
+	}
+	li {
+		&.selected a {
+			@include bp(wildcard-max, 700px) {
+				width: 45px;
+        color: $white;
+			}
+		}
+		a {
+			@include bp(wildcard-max, 700px) {
+				width: 175px;
+        color: #404040;
+			}
+		}
+	}
+	@include bp(wildcard-max, 700px) {
+		max-width: 45px;
+    overflow: hidden;
+    font-size: 11px;
+	}
+}

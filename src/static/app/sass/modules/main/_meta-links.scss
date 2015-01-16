@@ -24,8 +24,11 @@ a.meta-link {
     display: block;
     content: "";
     float: right;
+    @include bp(wildcard-max, 319px) {
+      display: none;
+    }
   }
-  @include bp(wildcard, 385px) {
+  @include bp(wildcard-min, 385px) {
     padding-right: 20px;
     padding-left: 20px;
   }

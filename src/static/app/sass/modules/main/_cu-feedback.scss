@@ -4,7 +4,7 @@
   left: 20px;
   border-bottom: 1px solid #000;
   z-index: 10000;
-  @include bp(m) {
+  @include bp(wildcard-max, 780px) {
     position: absolute;
     bottom: auto;
     left: auto;
@@ -40,7 +40,7 @@
 	  text-decoration: none !important;
 	}
   .m-remove {
-    @include bp(m) {
+    @include bp(wildcard-max, 780px) {
       display: none;
     }
   }
@@ -60,11 +60,11 @@
     background: url(/_files/img/feedback_icon.png) 0 0 no-repeat;
     width: 17px;
     height: 13px;
-    @include bp(m) {
+    @include bp(wildcard-max, 780px) {
       left: 9px;
     }
   }
-  @include bp(m) {
+  @include bp(wildcard-max, 780px) {
     position: relative;
     width: 35px;
     bottom: none;
@@ -81,7 +81,7 @@
   left: 0;
   width: 225px;
   height: 110px;
-  @include bp(wildcard, 1100px) {
+  @include bp(wildcard-min, 1100px) {
     z-index: 100 !important;
     width: 50px !important;
     height: 25px !important;
@@ -117,7 +117,7 @@
 	    text-decoration: underline;
 	  }
 	}
-  @include bp(m) {
+  @include bp(wildcard-max, 780px) {
     display: none !important;
   }
 }

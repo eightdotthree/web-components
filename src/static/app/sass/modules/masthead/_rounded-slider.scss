@@ -33,7 +33,7 @@
 	      }
 	    }
 	  }
-	  @include bp(wildcard, 768px) {
+	  @include bp(wildcard-min, 768px) {
 	  	position: absolute !important;
 	    padding-top: 0;
 	  }

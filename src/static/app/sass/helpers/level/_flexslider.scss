@@ -40,7 +40,7 @@
 }
 
 .slideDescription {
-  @include bp(l) {
+  @include bp(wildcard-max, 1024px) {
   	display: none;
   }
 }

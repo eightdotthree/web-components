@@ -94,10 +94,10 @@
           margin-top: 0;
           height: 33px;
         }
-        @include bp(wildcard, 1120px) {
+        @include bp(wildcard-min, 1120px) {
           padding: 8px 18px 0 18px;
         }
-        @include bp(wildcard, 1140px) {
+        @include bp(wildcard-min, 1140px) {
           padding: 12px 20px 0 20px;
         }
       }
@@ -111,7 +111,7 @@
         position: relative;
         padding: 0;
       }
-      @include bp(wildcard, 1120px) {
+      @include bp(wildcard-min, 1120px) {
         font-size: 20px;
       }
     }
@@ -125,7 +125,7 @@
   }
   .mainNavLinksAfter {
     &:hover {
-      @include bp(wildcard, 1120px) {
+      @include bp(wildcard-min, 1120px) {
         position: absolute;
         background-color: #353430;
         height: 45px;
@@ -135,7 +135,7 @@
         z-index: -1;
       }
     }
-    @include bp(wildcard, 1120px) {
+    @include bp(wildcard-min, 1120px) {
       position: absolute;
       background-color: #353430;
       height: 45px;
@@ -161,7 +161,7 @@
     float: left;
     position: relative;
   }
-  @include bp(wildcard, 1120px) {
+  @include bp(wildcard-min, 1120px) {
     background-color: transparent;
     margin: 0 0 0 0;
     width: auto;

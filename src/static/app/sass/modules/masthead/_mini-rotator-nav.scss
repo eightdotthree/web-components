@@ -27,7 +27,7 @@
     background-position: right center;
     right: 0;
   }
-  @include bp(wildcard, 768px) {
+  @include bp(wildcard-min, 768px) {
     // display: block;
   }
 }

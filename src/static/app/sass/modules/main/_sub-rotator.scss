@@ -35,7 +35,7 @@
 }
 
 div.subRotator {
-  @include bp(wildcard, 1100px) {
+  @include bp(wildcard-max, 1100px) {
   	padding-bottom: 0;
   }
 }

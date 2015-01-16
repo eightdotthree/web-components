@@ -37,7 +37,7 @@
     float: left;
     @include vendorize(box-sizing, border-box);
 	}
-	@include bp(wildcard, 1160px) {
+	@include bp(wildcard-min, 1160px) {
 		padding: 0 0 0 10px;
 	}
 }

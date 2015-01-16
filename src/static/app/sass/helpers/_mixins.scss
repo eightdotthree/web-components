@@ -12,8 +12,12 @@
 		@media (min-width: 1200px) { @content; }
 	}
 
-	@if $point == wildcard { // Uses variable breakpoint
+	@if $point == wildcard-min { // Uses variable breakpoint.
 		@media (min-width: #{$val}px) { @content; }
+	}
+
+	@if $point == wildcard-max { // Uses variable breakpoint.
+		@media (max-width: #{$val}px) { @content; }
 	}
 
 	@if $point == highres {
