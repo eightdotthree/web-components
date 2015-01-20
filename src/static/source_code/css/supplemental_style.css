@@ -1,0 +1,11 @@
+body.personnel .main { margin-left: 0; }    
+.personnel-listing .person {
+    height: auto;
+    min-height: 150px;
+    }
+    .personnel-listing .name, .personnel-listing .title, .personnel-listing .location, .personnel-listing .phone, .personnel-listing .email, .personnel-listing .bio, .personnel-listing .bio-url { margin-left: 60px; }
+    .personnel-listing .bio, .personnel-listing .bio-url { margin-top: 10px;}
+    
+th.header-light {
+    background-color: #EAE1BC;
+}
