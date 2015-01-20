@@ -1,0 +1,240 @@
+/* ==|== primary styles =====================================================
+   ========================================================================== */
+
+.ie7 .directorySearch *{
+    zoom:normal;
+}
+
+.breadcrumbs {
+    margin: 0 0 10px 50px;
+}
+
+.primaryContent .main{
+    width:100%;   
+    max-width: 940px;
+}
+
+.primaryContent .main>.leftColumn{
+    width:100%;
+    max-width:680px;  
+    float:left;
+}
+
+.rightColumn {
+    float:left;
+    margin: 20px 0 0 0;
+}
+
+.oldie .rightColumn{
+    margin:15px 0 0 0;   
+}
+
+.directorySearch{
+    background-color:#e5e2cf; 
+    padding: 10px 15px 10px 15px;  
+    border-left:1px solid white;
+    border-bottom:1px solid #a58f75;    
+}
+
+.directorySearch>label{
+    display:block;
+    font-family:"Open Sans";
+    font-size:16px;
+    color:#4a4949;   
+    margin:0 0 8px 0;
+}
+
+#directorySearchBox{
+    min-width:70%;   
+    height:25px;
+    line-height:25px;
+    color:#4a4949;
+}
+
+.directorySearch .directorySearchButton{
+    white-space:nowrap;
+    font-family:"Open Sans";
+    font-weight:800;
+    font-size:12px;
+    background-color:#8f0c30;
+    cursor:hand;
+    cursor:pointer;
+    color:White;
+    padding:7px 7px;
+    margin: 0 0 10px 0;
+    display:block;
+    width:80px;
+    text-align:center;
+    display: inline-block;
+}
+
+.directorySearch>.helpText{
+    color:#4a4949;
+    font-style:italic;
+    margin: 8px 0 0 15px;
+    display: inline-block;
+}
+
+.directorySearch>.filters{
+    border-top:1px solid #cecbba;   
+    box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+    padding:15px 0 15px 0;
+    margin:10px 0 0 0;
+}
+
+.directorySearch>.filters>label, .directorySearch>.filters select{
+    margin:0 10px 5px 0;    
+    width: 170px;  
+    max-height: 20px;
+    vertical-align: middle;  
+}
+
+.directorySearch>.filters>label[for=allFaculty]{
+    margin-left:5px;
+    vertical-align:text-top;
+}
+
+.searchResults, .personnel-listing{
+    padding:0 20px 20px 20px;   
+    margin:0 0 20px 0;
+   /* background-color:white;*/
+}
+
+.searchResults .summary{
+    border-bottom:1px dotted #565555;
+    padding:10px 0 10px 0;    
+}
+
+.searchResults .summary .results{
+    font-family:"Open Sans";
+    font-size:16px;   
+}
+
+.searchResults .summary .resultsFor{
+    font-family:Arial;
+    font-style:italic;
+    font-size:14px;   
+    border-left:1px solid black;
+    margin:0 0 0 10px;
+    padding:0 0 0 10px;    
+}
+
+.searchResults .result{
+    padding:15px 0 15px 85px;   
+    border-bottom:1px solid #a58f75;
+    min-height:80px;
+    position:relative;
+    color:#4a4949;
+    font-size:14px;
+    line-height:1.2;
+}
+
+.searchResults .result .link{
+    display:block;
+    float:right;
+    padding:5px 15px 5px 15px;
+    background-color:#8f0c30;
+    color:White;   
+    font-family:"Open Sans";
+    font-size:11px;  
+    font-weight:800;    
+}
+
+.searchResults .result .profilePicture{
+    position:absolute;
+    top:2px;
+    left:5px;
+    height:103px; 
+    width:74px;
+    overflow:hidden;
+}
+
+.searchResults .result .image{
+    position:absolute;
+    top:15px;
+    left:0;  
+}
+
+.searchResults .result .name{
+    font-size:18px;
+}
+
+.searchResults .result .email{
+    text-decoration:underline;
+}
+
+.searchResults .pagingInfo{
+    margin:10px 0 0 0;
+}
+
+.searchResults .pagingInfo .pagingNavigation{
+    color:#98002E;
+}
+
+.ie7 .searchResults{
+    zoom:1;   
+}
+
+.ie7 .searchResults .pagingInfo .pagingNavigation{
+    color:#98002E;
+    margin-top:-17px;
+}
+
+.oldie .totalResults{
+    margin-right:5px;
+}
+
+.searchResults .pagingInfo .pagingNavigation>span:first-child{
+    border:none;
+}
+
+.searchResults .pagingInfo .pagingNavigation>span{
+    padding:0 4px 0 4px;
+    border-left:1px solid black;    
+    text-decoration:underline;
+    cursor:hand;
+    cursor:pointer;
+}
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 780px) {
+    
+    .primaryContent .main{
+        width:100%;   
+        max-width: 940px;
+        margin:0 0 0 50px; 
+    }
+    
+    .primaryContent .main>.leftColumn{
+        margin:0 60px 0 0;
+    }
+    
+    .directorySearch{
+        padding: 10px 45px 10px 45px;     
+    }
+    
+    #directorySearchBox{
+        min-width: 60%;       
+        display: inline-block;
+}        
+    
+    .searchResults .pagingInfo .pagingNavigation{
+        float:right;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .directorySearch>.filters{
+        padding:15px 5% 15px 5%;
+        margin:10px 0 0 -5%;
+        width:100%;
+    }
+
+}
+
+@media only screen and (min-width: 1085px) {
+    
+}
