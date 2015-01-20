@@ -1,0 +1,309 @@
+/* ==|== primary styles =====================================================
+   ========================================================================== */
+
+.primaryContent .main{
+    max-width:none !important;  
+}
+
+.anchorLinks{
+    padding:15px 0 10px 0;
+    border-bottom:1px solid #a58f75;
+    margin:0 0 0 20px;
+}
+
+.ie7 .primaryContent .main h1,
+.ie7 .anchorLinks{
+    zoom:normal;
+}
+
+.facultySpotlight{
+    margin:10px 0 10px 0;
+    background: #e1dbbf;
+    background: -ms-radial-gradient(circle, #f2eedd, #ece6ce);
+    background: -ms-radial-gradient(circle, #f2eedd, #ece6ce);
+    background: -webkit-radial-gradient(circle, #f2eedd, #ece6ce);
+    background: -moz-radial-gradient(circle, #f2eedd, #ece6ce);
+    background: -ms-radial-gradient(circle, #f2eedd, #ece6ce);
+}
+
+.facultySpotlight .copy{
+    max-width:400px;
+    min-width:300px;
+    padding:0 10px 10px 10px;  
+    float:left;
+}
+
+.facultySpotlight .copy>h2{
+    font-weight:600;
+    color:#68441e;   
+    font-size:16px;
+    margin:0 0 10px 0;
+}
+
+.facultySpotlight>.video{
+    display:block;
+    position:relative;
+    float:left;
+}
+
+.facultySpotlight>.video>img{
+    margin:0;   
+}
+
+.facultySpotlight>.video>.playButton{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-image:url("../img/play_button.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.facultySpotlight>.copy{
+    margin:10px 5px 10px 5px;   
+}
+
+.filterContainer{
+    color:#4a4949;  
+    padding: 10px 25px 10px 0px;
+    border-top: 1px dotted #ACAA9E;
+    margin: 15px 0 0 0;
+
+}
+
+.filterContainer input{
+    margin-right:2px;   
+}
+
+.filterContainer span{    
+    display:block;
+}
+
+.filters>.filter{
+    padding:10px 0 10px 0;
+}
+
+.facultyList{    
+    margin:0 0 20px 0;   
+}
+
+.facultyList .facultyMember{
+    /*margin:20px 20px 0 0;*/
+    margin:20px 20px 2px 0;
+    width:190px;
+    display:inline-block;
+    vertical-align:top;
+    position:relative;
+    min-height:100px;
+    /*padding:0 20px 10px 110px;*/
+    padding:10px 20px 0 110px;  
+    /*border-bottom:1px dotted #565554;*/
+    border-top:1px dotted #565554;
+}
+
+.facultyList .facultyMember:nth-child(odd){
+    margin-right:45px;
+}
+
+.facultyList .facultyMember:nth-child(even){
+    margin-right:0;
+}
+
+.facultyList .facultyMember .profilePicture{
+    border: 3px solid white;
+    -webkit-box-shadow: 0px 0px 7px #434343;
+    -moz-box-shadow: 0px 0px 7px #434343;
+    box-shadow: 0px 0px 7px #434343;   
+    position:absolute;
+    /*top:0;*/
+    top:10px;
+    left:20px;
+    height:80px;
+    width:70px;
+    overflow:hidden;
+}
+
+.facultyList .facultyMember .profilePicture img{
+    position:absolute;
+    top: -3px;
+    left: -5px;
+}
+
+.facultyList .facultyMember>h2{
+    font-weight:normal;
+    font-size:16px;   
+    margin:0;
+    padding:0;
+}
+
+.facultyList .facultyMember>h2>a{
+    color:#830c28;
+}
+
+.facultyList .facultyMember>h2>a:after{
+    content:" \00BB";   
+}
+
+.facultyList .facultyMember>.department{
+    font-size:14px;  
+}
+
+
+.facultyList .facultyMember>.title,
+.facultyList .facultyMember>.additionalTitles{
+    font-size:13px;
+    margin:0 0 5px 0;
+    color:#222;
+}
+
+.facultyList .facultyMember>.specialty{
+    margin:5px 0 5px 0;
+}
+
+
+.facultyList .facultyMember>.affiliation,
+.facultyList .facultyMember>.phone{
+    font-size:12px;
+}
+
+.facultyList .facultyMember>.phone{
+    margin:5px 0 0 0;
+}
+
+.facultyList .facultyMember>.email{
+    margin:5px 0 0 0;
+}
+
+.facultyList .facultyMember>.affiliation .spacer{
+    margin:0 0 5px 0;
+}
+
+.facultyList .facultyMember>.bio{
+    font-size:12px;   
+    display:block;
+    margin:10px 0 10px 0;
+}
+
+.pagingInfo{
+    margin:10px 0 0 0;
+}
+
+.pagingInfo .pagingNavigation{
+    color:#98002E;
+}
+
+.pagingInfo .pagingNavigation>span:first-child{
+    border:none;
+}
+
+.pagingInfo .pagingNavigation>span{
+    padding:0 4px 0 4px;
+    border-left:1px solid black;    
+    text-decoration:underline;
+    cursor:hand;
+    cursor:pointer;
+}
+
+.directorySearch{
+    background-color:#f7f6f0; 
+    padding: 10px 15px 10px 15px;  
+    /*border-left:1px solid white;*/
+    border-bottom:1px solid #cdcdc7; 
+}
+
+.directorySearch>label{
+    display:block;
+    font-size:16px;
+    color:#4a4949;   
+    margin:0 0 8px 0;
+}
+
+#directorySearchBox{
+    min-width:70%;   
+    height:25px;
+    line-height:25px;
+    color:#4a4949;
+    text-indent: 10px;
+}
+
+.directorySearch .directorySearchButton{
+    white-space:nowrap;
+    font-weight:800;
+    font-size:12px;
+    background-color:#8f0c30;
+    cursor:hand;
+    cursor:pointer;
+    color:White;
+    padding:7px 7px;
+    margin: 0 0 10px 0;
+    display:block;
+    width:80px;
+    text-align:center;
+    display: inline-block;
+}
+
+.directorySearch>.helpText{
+    color:#4a4949;
+    font-style:italic;
+    margin: 8px 0 0 15px;
+    display: inline-block;
+}
+
+.directorySearch>.filters{
+    border-top:1px solid #cecbba;   
+    box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+    padding:15px 0 15px 0;
+    margin:10px 0 0 0;
+}
+
+.directorySearch>.filters>label, .directorySearch>.filters select{
+    margin:0 10px 5px 0;    
+    width: 170px;  
+    max-height: 20px;
+    vertical-align: middle;  
+}
+
+.directorySearch>.filters>label[for=allFaculty]{
+    margin-left:5px;
+    vertical-align:text-top;
+}
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 780px) {    
+    .filterContainer span{    
+        display:inline;
+    }    
+    
+    .filters>.filter{
+        padding:3px 10px 3px 10px;
+        border-left:1px solid #a58f75;
+    }
+
+    .filters>.filter:first-child{
+        border:none;  
+    }
+
+    .directorySearch{
+        padding: 20px 20px 10px 20px;     
+    }
+    
+    #directorySearchBox{
+        min-width: 60%;       
+        display: inline-block;
+    }     
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .pagingInfo .pagingNavigation{
+        float:right;
+        margin:0 25px 0 0;
+    }
+}
+
+@media only screen and (min-width: 1085px) {
+    
+}

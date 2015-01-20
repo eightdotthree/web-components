@@ -1,0 +1,19 @@
+.primaryContent {
+	.ie7 & {
+		.main h1 {
+			zoom: normal;
+		}
+	}
+	.main {
+	  max-width: none !important;
+	}
+}
+
+.anchorLinks {
+  padding: 15px 0 10px 0;
+  border-bottom: 1px solid #a58f75;
+  margin: 0 0 0 20px;
+  .ie7 & {
+  	zoom: normal;
+  }
+}

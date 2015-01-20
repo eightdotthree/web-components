@@ -1,0 +1,20 @@
+// Helpers
+@import "helpers/_variables"; // Common helper
+@import "helpers/_mixins"; // Common helper
+
+
+// Layout
+
+
+// Modules
+@import "modules/faculty/_directory-search";
+@import "modules/faculty/_faculty-list";
+@import "modules/faculty/_faculty-spotlight";
+@import "modules/faculty/_filters";
+@import "modules/faculty/_paging-info";
+
+@import "modules/faculty/_misc";
+
+
+// Print
+@import "print/faculty/_default";
