@@ -1,0 +1,181 @@
+/* ==|== primary styles =====================================================
+   ========================================================================== */
+
+.primaryContent .main{
+    /*max-width: 745px !important;*/
+     min-height: 230px; 
+
+    /*margin:0 0 50px 30px;*/
+}
+
+.profilePicture{
+    border:3px solid white;
+    -webkit-box-shadow: 0px 0px 7px #434343;
+    -moz-box-shadow: 0px 0px 7px #434343;
+    box-shadow: 0px 0px 7px #434343;
+    margin:10px 0 10px 0;
+    overflow:hidden;
+    width: 110px;
+    height:130px;
+    clear:both;
+    position:relative;
+}
+
+.profilePicture.noPhoto {
+    height: 75px;
+    width: 65px;
+}
+
+.profilePicture img{
+    position:absolute;
+}
+/*
+.rightColumn .callout{
+    width: 175px;
+    margin-left:30px;
+    padding: 10px 10px 10px 10px;
+    -moz-box-shadow: inset 8px 8px 8px -8px #999279;
+    -webkit-box-shadow: inset 8px 8px 8px -8px #999279;
+    box-shadow: inset 8px 8px 8px -8px #999279;
+}*/
+
+.profile{
+    font-size:14px;
+}
+
+.profile .jobTitle{
+    font-weight:normal;
+    font-size:14px;
+    margin: 0;
+}
+
+.profile div[itemprop="affiliation"]{
+    font-size:16px;   
+    max-width:600px;
+}
+
+.profile div[itemprop="affiliation"]:first-child{
+    margin: 15px 0 0 0;
+}
+
+.profile .honors{
+    font-size:15px;
+    margin:10px 0 0 0;
+}
+
+.profile dl{
+    margin:10px 0 10px 0;  
+}
+
+.profile .noFloat{
+    margin: 10px 0 10px 0;   
+    /*max-width:600px;*/
+    width: 70%;
+}
+
+
+.profile dt{
+    font-weight:bold;
+    float:left;
+    clear:left;
+    margin:0 5px 0 0;
+}
+
+.profile dd{
+    padding:0;
+    margin:0;
+    float:left;
+}
+
+.profile .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.profile .video iframe, .video object, .video embed {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.noFloat dt, .noFloat dd{
+    float:none;   
+}
+
+.websites dd{
+    text-decoration:underline;
+    margin:0 10px 0 0; 
+}
+
+.social{
+    margin:10px 0 0 0;
+}
+
+.large_photo .profilePicture{
+    height:auto;
+    width:auto;
+    max-width:188px;    
+}
+
+.large_photo .noFloat{
+    /*max-width:500px;   */
+}
+
+.large_photo .profilePicture img{
+    position:static;    
+}
+
+.contactInfo {
+     max-width: 500px; 
+}
+
+.profile dd.scholarlyWork {
+    padding: 10px 15px 10px 30px;
+    text-indent: -15px;
+}
+
+.profile dd.scholarlyWork div {
+    display: inline;
+}
+
+.profile dd.scholarlyWork div:after{
+    content: '.';    
+}
+
+.profile dd.scholarlyWork div:first-child:after{
+    content:'';   
+}
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 780px) {
+
+    .profilePicture {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        float: none;
+    }
+
+    .primaryContent .main {
+        width: 95%;
+        max-width: 900px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .primaryContent .main {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 1085px) {
+    
+}
