@@ -36,7 +36,7 @@
         line-height: 1;
       }
     }
-    @include bp(wildcard, 500px) {
+    @include bp(wildcard-min, 500px) {
       margin: 0 0 20px 8px;
       // float: left;
       width: 160px;

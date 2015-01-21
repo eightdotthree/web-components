@@ -51,7 +51,7 @@
         }
       }
     }
-    @include bp(l) {
+    @include bp(wildcard-max, 1024px) {
       bottom: 2px;
     }
   }
@@ -127,7 +127,7 @@
         padding: 0;
         margin: 0;
       }
-      @include bp(wildcard, 500px) {
+      @include bp(wildcard-min, 500px) {
         font-size: 28px;
       }
       @include bp(m) {
