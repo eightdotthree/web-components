@@ -1,0 +1,85 @@
+.js .noscript {
+  display: none;
+}
+
+.noscript p {
+  position: static;
+  color: black;
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding: 8px 12px 8px 50px;
+  margin: -8px 0 0 0;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  background: #FFFFBD;
+}
+
+.alert {
+  margin: 75px 0 -100px 0;
+  font-size: large;
+  line-height: 40px;
+  background-color: Red;
+  color: White;
+  text-align: center;
+  a {
+    color: White;
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 58px;
+  width: 280px;
+  margin: 10px 0 0 10px;
+  text-indent: -999em;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-position: -2px -1px;
+  margin-left: 8px !important;
+  @include bp(m) {
+    background-position: -2px -1px;
+    margin-left: 8px !important;
+  }
+}
+.facebook {
+  background-position: -28px -1px;
+  @include bp(m) {
+    background-position: -28px -1px;
+  }
+}
+.pinterest {
+  background-position: -54px -1px;
+  @include bp(m) {
+    background-position: -54px -1px;
+  }
+}
+.iTunes {
+  background-position: -80px -1px;
+  @include bp(m) {
+    background-position: -80px -1px;
+  }
+}
+.youTube {
+  background-position: -106px -1px;
+  @include bp(m) {
+    background-position: -106px -1px;
+  }
+}
+.linkedIn {
+  background-position: -132px -1px;
+  @include bp(m) {
+    background-position: -132px -1px;
+  }
+}
+.googlePlus {
+  background-position: -158px -1px;
+  @include bp(m) {
+    background-position: -158px -1px;
+  }
+}

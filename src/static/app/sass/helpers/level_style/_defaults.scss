@@ -2,6 +2,28 @@
   word-wrap: break-word;
 }
 
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-image: url("../img/diamond_pattern.png");
+  background-color: #fff;
+  background-repeat: repeat;
+  overflow-x: hidden;
+  @include bp(m) {
+    background-image: none;
+    background-color: #f6f2e0;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+  font-family: sans-serif;
+  color: #222;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -14,24 +36,6 @@ audio, canvas, video {
 
 audio:not([controls]), [hidden] {
   display: none;
-}
-
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background-image: url("../img/diamond_pattern.png");
-  background-color: #fff;
-  background-repeat: repeat;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.231;
-  font-family: sans-serif;
-  color: #222;
 }
 
 button, input, select, textarea {
