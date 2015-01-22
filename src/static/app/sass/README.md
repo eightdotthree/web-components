@@ -1,13 +1,18 @@
-This is the directory where each Chapman CSS file has been converted into modular Sass. Every original Chapman CSS file now has its own .scss file, which is a compiled version of all of the modules for the given stylesheet.
+This is the directory where each Chapman CSS file has been converted into modular Sass. Every original Chapman CSS file now has its own .scss file, which is a compiled version of all of the modules for the given stylesheet. The name of each file is based on the name of the original CSS file. If you are unsure of the original CSS file that a Sass file is based on, there is a comment at the top of each file showing its source.
 
-Each folder in this level of the directory (helpers, layout, modules, and print) has a subfolder that matches the name of each of these .scss files. Any files found within these folders are imported into the corresponding .scss file.
+Please some Sass files have prefixes if their source CSS is from certain directories:
 
-For example, we have main.scss. If you open it in a text editor, you will see that it’s importing various files within the following directories:
+level_: css/level/css
+widgets_: css/widgets/primary-content
 
-helpers/main
-layout/main
-modules/main
-print/main
+Each folder in this level of the directory (helpers, layout, modules, and print) has subfolders that match the name of each of these .scss files. Any files found within these folders are imported into the corresponding .scss file as modules.
+
+For example, we have style.scss. If you open it in a text editor, you will see that it’s importing various files within the following directories:
+
+helpers/style
+layout/style
+modules/style
+print/style
 
 This separation of modules ensures that the styles from each original Chapman CSS file can still be used in the same way they used to be, while still using Sass.
 
@@ -23,6 +28,6 @@ The build system, Grunt, will now be watching for Sass changes and recompile you
 
 ————————————————————
 
-1/20/15
+1/22/15
 Sarah Harissis
 BarkleyREI
