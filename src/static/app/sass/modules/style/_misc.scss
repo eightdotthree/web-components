@@ -93,3 +93,44 @@ div.rss-story p {
     bottom: 418px;
   }
 }
+
+.alert {
+  margin: 0;
+  font-size: large;
+  background-color: #98002E;
+  color: #FFFFFF;
+  text-align: center;
+  p {
+    font-size: large;
+    color: White;
+    padding: 15px;
+  }
+  a {
+    color: White;
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  position: relative;
+  top: 0;
+  display: block;
+  height: 58px;
+  width: 280px;
+  margin: 10px 0 0 10px;
+  text-indent: -999em;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  @include bp(m) {
+    clear: left;
+    float: left;
+    display: block;
+    position: static;
+    height: 58px;
+    width: 260px;
+    margin: -6px 0 0 10px;
+    text-indent: -999em;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+  }
+}

@@ -1,5 +1,8 @@
 * {
   word-wrap: break-word;
+  .ie7 & {
+    zoom: 1;
+  }
 }
 
 html {
@@ -169,6 +172,17 @@ sub {
 ul, ol {
   margin: 0;
   padding: 0;
+}
+
+ol {
+  .ie7 & {
+    zoom: normal;
+    li {
+      zoom: normal;
+      list-style-position: outside;
+      margin: 0 0 0 25px;
+    }
+  }
 }
 
 dd {
