@@ -1,0 +1,20 @@
+//----------------------------------------//
+// Sass file for level/css/admission.css
+//----------------------------------------//
+
+// Helpers
+@import "helpers/_variables"; // Common helper
+@import "helpers/_mixins"; // Common helper
+
+
+// Layout
+
+
+// Modules
+@import "modules/level_admission/_j-carousel";
+@import "modules/level_admission/_mini-rotator-container";
+@import "modules/level_admission/_primary-content";
+
+
+// Print
+@import "print/level_admission/_default";
