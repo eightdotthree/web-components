@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.smallMasthead .masthead, .smallMasthead .masthead-old, .bigMasthead .mastheadPlaceholder, .bigMasthead .masthead, .bigMasthead .masthead-old, .nameBar, .rightColumn .styleTwo {
+	background: #959300; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #959300 1%, #636200 93%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#959300), color-stop(93%,#636200)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #959300 1%,#636200 93%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #959300 1%,#636200 93%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #959300 1%,#636200 93%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover, #959300 1%,#636200 93%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959300', endColorstr='#636200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.rightColumn .styleTwo {
+  .border {
+    background-color: #bebd69;
+  }
+  a {
+    color: #fafadf;
+  }
+}
+
+.nameBarButtons li a {
+  color: #959300;
+}
+
+.expandedNameBarContainer {
+  h2, .copy {
+    color: #dde2d5;
+  }
+  a {
+    color: #dde2d5;
+    text-decoration: underline;
+  }
+}
+
+#social_follow_us {
+  .banner {
+    background-image: url('/_files/social_accounts/images/pharmacy_follow_us.png');
+  }
+  li span {
+    &.hover_state, &.inactive_state {
+      background: url('/_files/social_accounts/images/pharmacy_icons.png');
+    }
+  }
+}
+
+.rounded-slider .info-container .blue {
+  background-color: #959300;
+}
+
+.newbutton a {
+  border: 1px solid #959300;
+  background-color: #959300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#959300), to(#636200));
+  background-image: -webkit-linear-gradient(top, #959300, #636200);
+  background-image: -moz-linear-gradient(top, #959300, #636200);
+  background-image: -o-linear-gradient(top, #959300, #636200);
+  background-image: linear-gradient(to bottom, #959300, #636200);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959300', endColorstr='#636200',GradientType=1 );
+  &:hover {
+    border: 1px solid #959300;
+    background-color: #959300;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#959300), to(#636200));
+    background-image: -webkit-linear-gradient(top, #959300, #636200);
+    background-image: -moz-linear-gradient(top, #959300, #636200);
+    background-image: -o-linear-gradient(top, #959300, #636200);
+    background-image: linear-gradient(to bottom, #959300, #636200);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959300', endColorstr='#636200',GradientType=1 );
+  }
+}
+
+.midPhotoCallouts .photoCallout .caption {
+  background-color: #959300;
+}
+
+.photoCallouts {
+  .caption, .rollover {
+    background-color: #959300;
+  }
+}

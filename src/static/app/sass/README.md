@@ -4,6 +4,9 @@ Please some Sass files have prefixes if their source CSS is from certain directo
 
 level_: css/level/css
 widgets_: css/widgets/primary-content
+theme_: css/custom
+
+Note: Files prefixed with theme_ are not large enough to require modules. All styles for each theme are in the .scss file in this directory.
 
 Each folder in this level of the directory (helpers, layout, modules, and print) has subfolders that match the name of each of these .scss files. Any files found within these folders are imported into the corresponding .scss file as modules.
 

@@ -1,0 +1,68 @@
+.smallMasthead .masthead, .smallMasthead .masthead-old, .bigMasthead .mastheadPlaceholder, .bigMasthead .masthead, .bigMasthead .masthead-old, .nameBar, .rightColumn .styleTwo {
+	background: #007165; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #007165 0%, #005249 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#007165), color-stop(100%,#005249)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #007165 0%,#005249 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #007165 0%,#005249 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #007165 0%,#005249 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover,  #007165 0%,#005249 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007165', endColorstr='#005249',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.rightColumn .styleTwo .border {
+  background-color: #003832;
+}
+
+.nameBarButtons li a {
+  color: #007165;
+}
+
+.expandedNameBarContainer h2 {
+  color: #a7c3be;
+}
+
+#social_follow_us {
+  .banner {
+    background-image: url('[system-asset]/_files/social_accounts/images/copa_dance_follow_us.png[/system-asset]');
+  }
+  li span {
+    &.hover_state, &.inactive_state {
+      background: url('[system-asset]/_files/social_accounts/images/copa_dance_icons.png[/system-asset]');
+    }
+  }
+}
+
+.rounded-slider .info-container .blue {
+  background-color: #007165;
+}
+
+.newbutton a {
+  border: 1px solid #007165;
+  background-color: #1f1f1f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#007165), to(#005249));
+  background-image: -webkit-linear-gradient(top, #007165, #005249);
+  background-image: -moz-linear-gradient(top, #007165, #005249);
+  background-image: -o-linear-gradient(top, #007165, #005249);
+  background-image: linear-gradient(to bottom, #007165, #005249);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007165', endColorstr='#005249',GradientType=1 );
+  &:hover {
+    border: 1px solid #007165;
+    background-color: #1f1f1f;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#007165), to(#005249));
+    background-image: -webkit-linear-gradient(top, #007165, #005249);
+    background-image: -moz-linear-gradient(top, #007165, #005249);
+    background-image: -o-linear-gradient(top, #007165, #005249);
+    background-image: linear-gradient(to bottom, #007165, #005249);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007165', endColorstr='#005249',GradientType=1 );
+  }
+}
+
+.midPhotoCallouts .photoCallout .caption {
+  background-color: #007165;
+}
+
+.photoCallouts {
+  .caption, .rollover {
+    background-color: #007165;
+  }
+}

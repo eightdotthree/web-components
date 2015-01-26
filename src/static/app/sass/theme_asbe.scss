@@ -1,0 +1,70 @@
+.smallMasthead .masthead, .smallMasthead .masthead-old, .bigMasthead .mastheadPlaceholder, .bigMasthead .masthead, .bigMasthead .masthead-old, .nameBar, .rightColumn .styleTwo {
+  background: #006185; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #006185 1%, #004f6b 93%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#006185), color-stop(93%,#004f6b)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #006185 1%,#004f6b 93%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #006185 1%,#004f6b 93%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #006185 1%,#004f6b 93%); /* IE10+ */
+  background: radial-gradient(center, ellipse cover, #006080 1%,#004f6b 93%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006080', endColorstr='#004f6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.nameBarButtons li a {
+  color: #006080;
+}
+
+div.styleTwo a {
+  color: #fff;
+}
+
+.expandedNameBarContainer {
+  h2, a {
+    color: #95d2e8;
+  }
+}
+
+#social_follow_us {
+  .banner {
+    background-image: url('[system-asset]/_files/social_accounts/images/asbe_follow_us.png[/system-asset]');
+  }
+  li span {
+    &.hover_state, &.inactive_state {
+      background: url('[system-asset]/_files/social_accounts/images/asbe_icons.png[/system-asset]');
+    }
+  }
+}
+
+.rounded-slider .info-container .blue {
+  background-color: #006185;
+}
+
+.newbutton a {
+  border: 1px solid #006080;
+  background-color: #006080;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#006185), to(#004f6b));
+  background-image: -webkit-linear-gradient(top, #006185, #004f6b);
+  background-image: -moz-linear-gradient(top, #006185, #004f6b);
+  background-image: -o-linear-gradient(top, #006185, #004f6b);
+  background-image: linear-gradient(to bottom, #006185, #004f6b);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006185', endColorstr='#004f6b',GradientType=1 );
+  &:hover {
+    border: 1px solid #006080;
+    background-color: #006080;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#006185), to(#004f6b));
+    background-image: -webkit-linear-gradient(top, #006185, #004f6b);
+    background-image: -moz-linear-gradient(top, #006185, #004f6b);
+    background-image: -o-linear-gradient(top, #006185, #004f6b);
+    background-image: linear-gradient(to bottom, #006185, #004f6b);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006185', endColorstr='#004f6b',GradientType=1 );
+  }
+}
+
+.midPhotoCallouts .photoCallout .caption {
+  background-color: #006185;
+}
+
+.photoCallouts {
+  .caption, .rollover {
+    background-color: #006185;
+  }
+}

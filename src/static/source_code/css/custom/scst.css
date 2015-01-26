@@ -1,0 +1,46 @@
+.smallMasthead .masthead, .smallMasthead .masthead-old, .bigMasthead .mastheadPlaceholder, .bigMasthead .masthead, .bigMasthead .masthead-old, .nameBar, .rightColumn .styleTwo {
+background: #d4e13c; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #4A5E0F 1%, #36450B 93%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#4A5E0F), color-stop(93%,#36450B)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #4A5E0F 1%,#36450B 93%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #4A5E0F 1%,#36450B 93%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #4A5E0F 1%,#36450B 93%); /* IE10+ */
+background: radial-gradient(center, ellipse cover, #4A5E0F 1%,#36450B 93%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4A5E0F', endColorstr='#36450B',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.rightColumn .styleTwo .border { background-color: #99a12b; }
+.rightColumn .styleTwo .editableContent p {color: white;}
+.rightColumn .styleTwo .editableContent a { color: #99A12B; text-decoration: underline; }
+
+.nameBarButtons li a { color: #4A5E0F;}
+.expandedNameBarContainer h2 , .expandedNameBarContainer .copy, .expandedNameBarContainer a { color: #dbdfcf; }
+.expandedNameBarContainer a { text-decoration: underline; } 
+
+
+#social_follow_us .banner { 
+    background-image: url('[system-asset]/_files/social_accounts/images/scst_follow_us.png[/system-asset]'); 
+    }
+#social_follow_us li span.hover_state, #social_follow_us li span.inactive_state {
+    background: url('[system-asset]/_files/social_accounts/images/scst_icons.png[/system-asset]');
+    }
+    
+.rounded-slider .info-container .blue{
+    background-color:#4A5E0F;
+}    
+
+.newbutton a, .newbutton a:hover {
+    border: 1px solid #4A5E0F;
+    background-color: #4A5E0F;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4A5E0F), to(#36450B));
+    background-image: -webkit-linear-gradient(top, #4A5E0F, #36450B);
+    background-image: -moz-linear-gradient(top, #4A5E0F, #36450B);
+    background-image: -o-linear-gradient(top, #4A5E0F, #36450B);
+    background-image: linear-gradient(to bottom, #4A5E0F, #36450B);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4A5E0F', endColorstr='#36450B',GradientType=1 );
+}
+
+.midPhotoCallouts .photoCallout .caption,
+.photoCallouts .caption,
+.photoCallouts .rollover{
+     background-color: #4A5E0F;   
+}
