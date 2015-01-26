@@ -2,9 +2,3 @@
   min-width: 320px;
   overflow: hidden;
 }
-
-#main {
-  @include bp(m) {
-  	overflow: hidden;
-  }
-}

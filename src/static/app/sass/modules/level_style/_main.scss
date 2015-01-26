@@ -1,3 +1,9 @@
+#main {
+  @include bp(m) {
+  	overflow: hidden;
+  }
+}
+
 .main {
 	.ie7 & {
 		h2 {
