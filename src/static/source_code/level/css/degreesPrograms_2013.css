@@ -1,0 +1,108 @@
+/* ==|== primary styles =====================================================
+   ========================================================================== */
+
+.primaryContent .main{
+    max-width:none !important;  
+    width:100%;
+}
+
+.main .newsEvents{
+    min-height:0;   
+    max-width:100%;
+    float:none;
+}
+
+.main .newsEventsNav{
+    display:block;
+    background-image:none;
+    height:auto;    
+    padding:0 0 10px 0; 
+}
+
+.main .newsEventsNav li{
+    margin:0 30px 0 0;
+    float:none; 
+}
+
+.main .newsEventsNav li.active{
+    bottom:-5px;   
+}
+
+.main .newsEventsContent>li{
+    padding:0 10px 0 10px;
+}
+
+.anchorLinks{
+    margin:0 20px 0 20px;
+}
+
+.anchorLinks>a{
+    margin:0 5px 0 0;
+}
+
+.degreesPrograms{
+    margin:20px 0 0 0;
+}
+
+.letterBlock {
+    margin: 0 0 20px 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.ie7 .letterBlock{
+    display:inline;
+    zoom:1;   
+}
+
+.letterBlock ul{
+    list-style-type:none;   
+}
+
+.letterBlock ul li{
+    margin:0 20px 5px 0;   
+    padding:0 0 0 12px;
+    text-indent:-12px;
+}
+
+.letter, .letter:hover, .letter:focus, .letter:visited{
+    color:Black !important;   
+    text-decoration:none;
+    margin:0 0 5px 0;
+    display:block;
+}
+ 
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 780px) {
+    
+        
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .main .newsEventsNav{
+        /*
+        background-image:url("../img/tab_shadow_long.png");  
+        background-position:left bottom;
+        */
+        height:auto;      
+        height:35px;   
+        padding:0;
+    }
+    
+    .main .newsEventsNav li{
+        margin:-1px 2px 0 0;
+        float:left;   
+    }
+    
+    .main .newsEventsNav li.active{
+        bottom:0;   
+    }
+}
+
+@media only screen and (min-width: 1085px) {
+    
+}
