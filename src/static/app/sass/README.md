@@ -5,6 +5,7 @@ Please some Sass files have prefixes if their source CSS is from certain directo
 level_: css/level/css
 widgets_: css/widgets/primary-content
 theme_: css/custom
+virtual-tour_: virtualTour/css
 
 Note: Files prefixed with theme_ are not large enough to require modules. All styles for each theme are in the .scss file in this directory.
 
