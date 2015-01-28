@@ -172,17 +172,6 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        // not used since Uglify task does concat,
-        // but still available if needed
-        /*concat: {
-            dist: {}
-        },*/
-        // not enabled since usemin task does concat and uglify
-        // check index.html to edit your build targets
-        // enable this task if you prefer defining your build targets here
-        /*uglify: {
-            dist: {}
-        },*/
         useminPrepare: {
             options: {
                 dest: '<%= yeoman.dist %>'
@@ -215,22 +204,6 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>/img'
                 }]
             }
-        },
-        cssmin: {
-            // This task is pre-configured if you do not wish to use Usemin
-            // blocks for your CSS. By default, the Usemin block from your
-            // `index.html` will take care of minification, e.g.
-            //
-            //     <!-- build:css({.tmp,app}) css/main.css -->
-            //
-            // dist: {
-            //     files: {
-            //         '<%= yeoman.dist %>/css/main.css': [
-            //             '.tmp/css/{,*/}*.css',
-            //             '<%= yeoman.app %>/css/{,*/}*.css'
-            //         ]
-            //     }
-            // }
         },
         htmlmin: {
             dist: {
@@ -309,7 +282,6 @@ module.exports = function (grunt) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
         }
-
         grunt.task.run([
             'clean:server',
             'concurrent:server',
@@ -334,7 +306,6 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'concat',
-        'cssmin',
         'uglify',
         'copy:dist',
         'usemin'
