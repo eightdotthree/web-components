@@ -1,9 +1,9 @@
 .button,
 a.button {
-	background-color: #dad8cf;
+	background-color: $color-chapman-gray;
 	border: none;
 	border-radius: 3px;
-	color: #353430;
+	color: $color-dark-gray;
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
@@ -21,7 +21,7 @@ a.button {
 	}
 
 	&:hover {
-		color: #000;
+		color: $black;
 		opacity: 0.9;
 		text-decoration: none;
 	}
@@ -29,20 +29,30 @@ a.button {
 	&.red,
 	&.primary {
 		background-color: $color-chapman-red;
-		color: #FFF;
+		color: $white;
 
 		&:hover {
-			color: #FFF;
+			color: $white;
 		}
 	}
 
 	&.blue,
 	&.secondary {
 		background-color: $color-chapman-blue;
-		color: #FFF;
+		color: $white;
 
 		&:hover {
-			color: #FFF;
+			color: $white;
+		}
+	}
+
+	&.pointer {
+		&:after {
+			font-size: 32px;
+			content: "»";
+			margin-left: 5px;
+			display: inline-block;
+			vertical-align: sub;
 		}
 	}
 }
