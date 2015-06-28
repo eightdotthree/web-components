@@ -47,12 +47,45 @@ a.button {
 	}
 
 	&.pointer {
+		&:before {
+			content: "«";
+			margin-right: 2px;
+			display: none;
+		}
 		&:after {
-			font-size: 32px;
 			content: "»";
-			margin-left: 5px;
+			margin-left: 2px;
 			display: inline-block;
+		}
+
+		&:after,
+		&:before {
+			font-size: 32px;
 			vertical-align: sub;
+		}
+
+		&.back {
+			&:before {
+				display: inline-block;
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&.default {
+		background-color: $white;
+	}
+
+	&.small {
+		font-size: 14px;
+		padding: 10px 20px;
+		&.pointer {
+			&:after,
+			&:before {
+				font-size: 28px;
+			}
 		}
 	}
 }
